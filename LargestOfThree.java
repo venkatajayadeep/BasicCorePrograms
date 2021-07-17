@@ -1,7 +1,6 @@
 package BridgeLabz;
-import java.util.Scanner;
 import java.utility.Utility;
-public class BasicCorePrograms {
+public class LargestOfThree {
 	public static void main(String[] args) {
 		Utility utility = new Utility();
 		System.out.println("Enter the first number to be checked ::");  
@@ -13,7 +12,7 @@ public class BasicCorePrograms {
 
 		utility.largestOfThreeNumbers(firstNumber,secondNumber,thirdNumber); //check largest of three
 	}
-}
 
+}
 
 
