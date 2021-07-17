@@ -2,24 +2,18 @@ package BridgeLabz;
 import java.util.Scanner;
 import java.utility.Utility;
 public class BasicCorePrograms {
-	public static void main(String... a)
-    {
-        System.out.print("Enter any number : ");
-        Scanner s = new Scanner(System.in);
-        int num = s.nextInt();
-        System.out.print("The Harmonic Series is : ");
-        double result = 0.0;
-        while(num > 0)
-          {
-               result = result + (double) 1 / num;
-               num--;
-               System.out.print(result +"  ");
-          }
-        System.out.println("");
-        System.out.println("Output of Harmonic Series is "+result);
+	public static void main (String[] args) {
+		int x,y;
+		Scanner sc = new Scanner(System.in); 
+		System.out.println("Enter the value of X and Y");  
+		 x = sc.nextInt();  
+	     y = sc.nextInt(); 
+	     int quotient = x/y;
+	     int reminder = x%y;
+	     System.out.println("quotient is :" +quotient ); 
+	     System.out.println("reminder is :" +reminder );
+	}
 
-	
-}
 }
 
 
