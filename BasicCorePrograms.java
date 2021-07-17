@@ -2,22 +2,17 @@ package BridgeLabz;
 import java.util.Scanner;
 import java.utility.Utility;
 public class BasicCorePrograms {
-	public static void main(String[ ] arg)
-	{
-	
-	System.out.println("Enter a character : ");
-	char ch;
-	Scanner sc = new Scanner(System.in);
-	  ch = sc.next().charAt(0);
+	public static void main(String[] args) {
+		Utility utility = new Utility();
+		System.out.println("Enter the first number to be checked ::");  
+		int firstNumber = utility.getIntValue();							// input number 1
+		System.out.println("Enter the second number to be checked ::"); 
+		int secondNumber = utility.getIntValue();             				// input number 2
+		System.out.println("Enter the third number to be checked ::");
+		int thirdNumber = utility.getIntValue();							// input number 3
 
-        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' )
-            System.out.println(ch + " is vowel");
-        else if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
-    		System.out.println("Entered character "+ch+" is Consonent");
-        else
-            System.out.println(ch + " is not a alphabet");
-
-    }
+		utility.largestOfThreeNumbers(firstNumber,secondNumber,thirdNumber); //check largest of three
+	}
 }
 
 
