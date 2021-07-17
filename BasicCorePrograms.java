@@ -4,15 +4,11 @@ import java.utility.Utility;
 public class BasicCorePrograms {
 	public static void main(String[] args) {
 		Utility utility = new Utility();
-		System.out.println("Enter number of time you want to flip");
-		int numberOfFlip = utility.getIntValue();
-		if(numberOfFlip <= 0) {
-		System.out.println("You Entered negative number" + numberOfFlip);
+		System.out.println("Enter the year you want to check");
+		int YearToCheck = utility.getIntValue();    // year to be checked
+		utility.getLeapYearStatus(YearToCheck);
 		}
-		else {
-		utility.flipCoin(numberOfFlip);
-			}
-	}	
 }
+
 
 
