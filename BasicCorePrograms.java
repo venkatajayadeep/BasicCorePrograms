@@ -1,8 +1,18 @@
 package BridgeLabz;
 
+import java.utility.Utility;
 public class BasicCorePrograms {
 	public static void main(String[] args) {
-		System.out.println("WelCome");
-
-	}
+		Utility utility = new Utility();
+		System.out.println("Enter number of time you want to flip");
+		int numberOfFlip = utility.getIntValue();
+		if(numberOfFlip <= 0) {
+		System.out.println("You Entered negative number" + numberOfFlip);
+		}
+		else {
+		utility.flipCoin(numberOfFlip);
+			}
+	}	
 }
+
+
